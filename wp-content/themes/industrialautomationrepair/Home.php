@@ -2,7 +2,6 @@
 /* Template Name: Home */
 get_header();
 ?>
-
   <body>
         <header>
             <div class="top_header">
@@ -308,15 +307,6 @@ get_header();
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
             <section class="contact_sec p_8 bg_style" style="background-image: url('<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/contact-sec.jpg')">
                 <div class="container">
                     <div class="contact_form_sec">
