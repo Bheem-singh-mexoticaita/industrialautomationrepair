@@ -22,4 +22,15 @@ jQuery(document).ready(function() {
     prevArrow: $(".slide_controls_1 .slide-prev"),
     nextArrow: $(".slide_controls_1 .slide-next"),
   });
+  jQuery(".partner_box").slick({
+    dots: false,
+    arrows: true,
+    autoplay:true,
+    infinite:true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 1000,
+    prevArrow: $(".slide_controls_1 .slide-prev"),
+    nextArrow: $(".slide_controls_1 .slide-next"),
+  });
 });

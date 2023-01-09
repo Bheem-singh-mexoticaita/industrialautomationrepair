@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,7 +7,7 @@
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title><?php wp_title();?></title>
+        <title>Industrial Automation Repair</title>
         <!-- fontawesome -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/font-awesome/all.css"/>
         <!-- Bootstrap CSS -->
@@ -19,7 +18,7 @@
         <!-- main.css -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/css/main.css" />
       </head>
-      <body>
+  <body>
         <header>
             <div class="top_header">
                 <div class="container">
@@ -37,3 +36,14 @@
                     </div>
                 </div>
             </div>
+            <div class="bottom_header">
+                <div class="container">
+                    <div class="menu_header">
+                        <div class="main_logo">
+                        <a href="<?=site_url();?>"><h1><?= get_bloginfo('name');?></h1></a>
+                        </div>
+                        <?php wp_nav_menu(array('container' => 'ul','menu_class'=> 'menu_links')); ?>
+                    </div>
+                </div>
+            </div>
+        </header>

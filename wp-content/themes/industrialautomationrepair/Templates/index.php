@@ -1,18 +1,10 @@
-<?php
+
+<?php 
 /* Template Name: Home */
 get_header();
+
 ?>
-            <div class="bottom_header">
-                <div class="container">
-                    <div class="menu_header">
-                        <div class="main_logo">
-                            <a href="<?=site_url();?>"><h1><?= get_bloginfo('name');?></h1></a>
-                        </div>
-                        <?php wp_nav_menu(array('container' => 'ul','menu_class'=> 'menu_links')); ?>
-                    </div>
-                </div>
-            </div>
-        </header>
+
         <div class="wraper">
             <section class="hero_slider">
                 <div class="hero_slider_content">
@@ -282,6 +274,15 @@ get_header();
                     </div>
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
             <section class="contact_sec p_8 bg_style" style="background-image: url('<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/contact-sec.jpg')">
                 <div class="container">
                     <div class="contact_form_sec">
@@ -318,4 +319,7 @@ get_header();
                 </div>
             </section>
         </div>
-        |<?php get_footer( );?>
+       <?php 
+get_footer()
+
+?>
