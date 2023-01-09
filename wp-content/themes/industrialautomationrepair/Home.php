@@ -2,14 +2,13 @@
 /* Template Name: Home */
 get_header();
 ?>
-
             <div class="bottom_header">
                 <div class="container">
                     <div class="menu_header">
                         <div class="main_logo">
                             <a href="<?=site_url();?>"><h1><?= get_bloginfo('name');?></h1></a>
                         </div>
-                        <?php   wp_nav_menu(array('container' => 'ul','menu_class'=> 'menu_links')); ?>
+                        <?php wp_nav_menu(array('container' => 'ul','menu_class'=> 'menu_links')); ?>
                     </div>
                 </div>
             </div>
