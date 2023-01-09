@@ -5,7 +5,7 @@
                         <div class="col-md-4">
                             <div class="company_bio">
                                 <div class="footer_logo">
-                                    <a href="#"><h1>Logo</h1></a>
+                                <a href="<?=site_url();?>"><h1><?= get_bloginfo('name');?></h1></a>
                                 </div>
                                 <div class="title_head">
                                     <p>
@@ -19,13 +19,7 @@
                                 <div class="title_head">
                                     <h4>Quick Links</h4>
                                 </div>
-                                <ul>
-                                    <li><a href="#">Servo Motor Repair</a></li>
-                                    <li><a href="#">Servo Drive Repair</a></li>
-                                    <li><a href="#">Industrial Electronics Repair</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
+                                <?php   wp_nav_menu(array()); ?>
                             </div>
                         </div>
                         <div class="col-md-3">

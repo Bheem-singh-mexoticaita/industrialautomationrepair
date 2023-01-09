@@ -24,16 +24,9 @@ get_header();
                 <div class="container">
                     <div class="menu_header">
                         <div class="main_logo">
-                            <a href=""><h1>Logo</h1></a>
+                            <a href="<?=site_url();?>"><h1><?= get_bloginfo('name');?></h1></a>
                         </div>
-                        <ul class="menu_links">
-                            <li><a href="#">Servo Motor Repair</a></li>
-                            <li><a href="#">Servo Drive Repair</a></li>
-                            <li><a href="#">Industrial Electronics Repair</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Employment</a></li>
-                        </ul>
+                        <?php   wp_nav_menu(array('container' => 'ul','menu_class'=> 'menu_links')); ?>
                     </div>
                 </div>
             </div>

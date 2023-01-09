@@ -8,7 +8,7 @@
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Industrial Automation Repair</title>
+        <title><?php wp_title();?></title>
         <!-- fontawesome -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/font-awesome/all.css"/>
         <!-- Bootstrap CSS -->
