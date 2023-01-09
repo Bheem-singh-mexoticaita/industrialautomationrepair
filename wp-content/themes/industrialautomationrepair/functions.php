@@ -22,5 +22,14 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 register_nav_menus( array('primary_menu' => __( 'Primary Menu', 'text_domain' ) ) );
 add_theme_support( 'post-thumbnails'); add_theme_support( 'custom-header');
+add_action( 'admin_menu', 'add_admin_menu');
 
+function  add_admin_menu(){
+    add_menu_page('Site Managemnet', 'Site Managemnet', 'manage_options', 'Social_Site_Managemnet');
+add_submenu_page( 'Social Site Management', 'Social Site Management', 'Social Site Management',
+	'manage_options', 'Social_Site_Managemnet');
+}
+function Social_Site_Managemnet(){
+    return "Asdsadsads";
+}
 // END ENQUEUE PARENT ACTION

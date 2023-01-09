@@ -9,7 +9,7 @@
                                 </div>
                                 <div class="title_head">
                                     <p>
-                                        Industrial Automation Repair Inc. is a full service repair company, specializing in the repair of industrial/automation controls.
+                                    <?= get_bloginfo('description');?>
                                     </p>
                                 </div>
                             </div>

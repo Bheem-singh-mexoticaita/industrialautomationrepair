@@ -2,24 +2,7 @@
 /* Template Name: Home */
 get_header();
 ?>
-  <body>
-        <header>
-            <div class="top_header">
-                <div class="container">
-                    <div class="header_links">
-                        <div class="social_c d-flex align-items-center"><div class="icon_img"><img src="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/phone.svg"></div><a href="tel:18779046155">1-877-904-6155</a></div>
-                        <ul class="d-flex align-items-center">
-                            <li><a href=""><img src="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/facebook.svg"></a></li>
-                            <li><a href=""><img src="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/twitter.svg"></a></li>
-                            <li><a href=""><img src="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/insta.svg"></a></li>
-                        </ul>
-                        <div class="social_c d-flex align-items-center">
-                            <div class="icon_img"><img src="<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/email.svg"></div>
-                            <a href="mailto:info@industrialautomationrepair.com">info@industrialautomationrepair.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="bottom_header">
                 <div class="container">
                     <div class="menu_header">
