@@ -28,11 +28,10 @@
                                     <h4>Quick Supoort</h4>
                                 </div>
                                 <ul>
-                                    <li><a href="tel:18779046155">1-877-904-6155</a></li>
-                                    <li><a href="mailto:info@industrialautomationrepair.com">info@industrialautomationrepair.com</a></li>
-                                    <li>Industrial Automation Repair.
-                                        1299 Matheson Blvd E.</li>
-                                </ul>
+                                <?php foreach (get_field('office_canada','option') as $key => $value) {?>
+                                    <li><a><?= $value['contant'];?></a></li>
+                                    <?php   }?>
+                               </ul>
                             </div>
                         </div>
                     </div>
