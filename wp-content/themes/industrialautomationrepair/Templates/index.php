@@ -2,7 +2,6 @@
 <?php 
 /* Template Name: Home */
 get_header();
-
 ?>
 
         <div class="wraper">
@@ -98,14 +97,9 @@ get_header();
                                 <div class="service_cat">
                                     <h4>Industry Category</h4>
                                     <ul>
-                                        <li>Automation, Process & Control</li>
-                                        <li>Industrial Electronics & Components</li>
-                                        <li>Environment & Waste Management</li>
-                                        <li>Food & Beverage Processing</li>
-                                        <li>Heavy Machinery & Equipment</li>
-                                        <li>Industrial Consumables</li>
-                                        <li>Industry Services</li>
-                                        <li>Instrumentation, Test & Measurement</li>
+                                        <?php foreach (get_categories(['hide_empty' => 0,'pad_counts' => true])as $key => $value) {?>
+                                            <li catagory_id="<?= $value->term_id;?>"><?=$value->name ?></li>
+                                            <?php } ?>
                                     </ul>
                                 </div>
                                 

@@ -1,6 +1,8 @@
 <?php 
 /* Template Name: About */
 get_header();
+global $post;
+// echo '<pre>'; print_r($post);
 ?>
         <div class="wraper">
             <section class="inner_banner bg_style" style="background-image: url('<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/about-banner.jpg')">
@@ -22,8 +24,7 @@ get_header();
                             <div class="about_text title_head">
                                 <h6>ABOUT</h6>
                                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                                <?=$post->post_content;?>
                             </div>
                         </div>
                     </div>
@@ -62,8 +63,7 @@ get_header();
                             <div class="about_text title_head">
                                 <h6>our History</h6>
                                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+                               <?= get_field('history');?>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-5">

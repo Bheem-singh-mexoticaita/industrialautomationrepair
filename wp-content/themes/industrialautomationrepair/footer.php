@@ -28,8 +28,8 @@
                                     <h4>Quick Supoort</h4>
                                 </div>
                                 <ul>
-                                <?php foreach (get_field('office_canada','option') as $key => $value) {?>
-                                    <li><a><?= $value['contant'];?></a></li>
+                                <?php foreach (get_field('office_location','option') as $key => $value) {?>
+                                    <li><a><?= $value['content'];?></a></li>
                                     <?php   }?>
                                </ul>
                             </div>
@@ -40,7 +40,7 @@
             <div class="copyright_sec">
                 <div class="container">
                     <div class="text-center">
-                        <p>©2023 Industrial Automation Repair Ltd | All right reserved </p>
+                        <p><?= get_field('copyright','option');?></p>
                     </div>
                 </div>
             </div>

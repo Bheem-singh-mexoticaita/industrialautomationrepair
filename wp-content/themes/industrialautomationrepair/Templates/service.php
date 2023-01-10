@@ -36,79 +36,14 @@ get_header();
                     </div>
                     <div class="industry_row">
                         <div class="row justify-content-center">
+                        <?php foreach (get_categories(['hide_empty' => 0,'pad_counts' => true])as $key => $value) {?>
                             <div class="col-md-4 mb-4">
                                 <div class="industry_cat_box">
-                                    <h5>Automation <br>Process & Control</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
+                                    <h5><?=$value->name ?></h5>
+                                    <p><?=$value->description ?></p>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Industrial<br>
-                                        Electronics & Components</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Environment<br>
-                                        & Waste Management</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                           
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Food <br>
-                                        & Beverage Processing</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Heavy <br>
-                                        Machinery & Equipment</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Industrial<br>
-                                        Consumables</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Industry<br>
-                                        Services</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Instrumentation,<br>
-                                        Test & Measurement
-                                        </h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Materials<br>
-                                        Handling & Storage</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 mb-4">
-                                <div class="industry_cat_box">
-                                    <h5>Metal<br>
-                                        Working</h5>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
-                                </div>
-                            </div>
-                            
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
