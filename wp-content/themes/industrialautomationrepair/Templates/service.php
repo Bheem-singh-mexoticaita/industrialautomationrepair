@@ -1,10 +1,8 @@
 <?php 
 /* Template Name: Service */
 get_header();
-
 ?>
-
-        <div class="wraper">
+<div class="wraper">
             <section class="inner_banner bg_style" style="background-image: url('<?php echo get_stylesheet_directory_uri( __FILE__);?>/assets/img/service-banner.jpg')">
                 <div class="container">
                     <div class="inner_bnner_txt text-center">
