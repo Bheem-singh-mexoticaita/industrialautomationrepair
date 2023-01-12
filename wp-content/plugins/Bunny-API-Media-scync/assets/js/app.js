@@ -1,3 +1,15 @@
+$(function () {
+    console.log('asdsadsadsa');
+});
+
+
+
+
+
+
+
+
+
 // var resturen = AjexGETXMLHttpRequest('https://jsonplaceholder.typicode.com/users','GET');
 // console.log(resturen);
 
